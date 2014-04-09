@@ -2,7 +2,7 @@
 	> File Name: rotatePic.cpp
 	> Author: sijiewang
 	> Mail: lnmcc@hotmail.com 
-	> Web: lnmcc.net 
+	> Blog: lnmcc.net 
 	> Created Time: 2014年03月27日 星期四 12时05分45秒
  ************************************************************************/
 #include <GL/glut.h>
@@ -101,6 +101,7 @@ void init(void) {
     glViewport(0, 0, scrnWidth, scrnHeight);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glClearColor(0.0, 0.0, 0.0, 0.0);
+    /*
     glShadeModel(GL_SMOOTH);
     glCullFace(GL_BACK);
     glEnable(GL_DEPTH_TEST);
@@ -109,7 +110,7 @@ void init(void) {
     glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
+*/
     glEnable(GL_TEXTURE_2D);
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
